@@ -6,7 +6,7 @@ import Section from "@/components/ui/Section";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { ExternalLink, Eye } from "lucide-react";
+import { ExternalLink, Eye, ArrowRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const containerVariants: Variants = {
@@ -122,6 +122,15 @@ export default function ProjectsSection() {
                       +{project.TechStack.length - 4}
                     </span>
                   )}
+                </div>
+                <div className="mt-5 flex justify-end">
+                  <Link
+                    href={`/projects/${project.id}` as any}
+                    className="flex items-center justify-center py-2 px-4 rounded-lg bg-blue-600/10 hover:bg-blue-600/20 text-blue-700 dark:bg-blue-500/10 dark:hover:bg-blue-500/20 dark:text-blue-400 font-medium text-sm transition-colors gap-2"
+                  >
+                    {t("projectDetails")}
+                    <ArrowRight size={16} />
+                  </Link>
                 </div>
               </div>
             </motion.div>

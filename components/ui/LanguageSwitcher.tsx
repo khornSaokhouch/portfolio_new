@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
-
 export function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
@@ -16,10 +15,14 @@ export function LanguageSwitcher() {
   return (
     <button
       onClick={toggleLanguage}
-      className="p-2 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-sm font-medium uppercase"
+      className="p-2 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors flex items-center justify-center"
       aria-label="Toggle Language"
     >
-      {locale === "en" ? "KM" : "EN"}
+      {locale === "en" ? (
+        <img src="/assets/lang/en.png" alt="English" className="rounded-sm h-6 w-auto object-cover" />
+      ) : (
+        <img src="/assets/lang/kh.png" alt="Khmer" className="rounded-sm h-6 w-auto object-cover" />
+      )}
     </button>
   );
 }

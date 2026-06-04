@@ -6,7 +6,7 @@ import Section from "@/components/ui/Section";
 import { certificates } from "@/data/certificates";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { Award, Calendar } from "lucide-react";
+import { Award, Calendar, ArrowRight } from "lucide-react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -82,6 +82,14 @@ export default function CertificationsSection() {
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mt-auto line-clamp-3">
                   {cert.description}
                 </p>
+                <div className="mt-5 flex justify-end">
+                  <span
+                    className="flex items-center justify-center py-2 px-4 rounded-lg bg-blue-600/10 hover:bg-blue-600/20 text-blue-700 dark:bg-blue-500/10 dark:hover:bg-blue-500/20 dark:text-blue-400 font-medium text-sm transition-colors gap-2"
+                  >
+                    {t.has("certificateDetails") ? t("certificateDetails") : "Certificate Details"}
+                    <ArrowRight size={16} />
+                  </span>
+                </div>
               </div>
             </Link>
           </motion.div>
