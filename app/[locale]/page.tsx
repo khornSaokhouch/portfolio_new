@@ -1,12 +1,21 @@
-import { useTranslations } from 'next-intl';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import EducationSection from '@/components/sections/EducationSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import ContactSection from '@/components/sections/ContactSection';
+import Footer from '@/components/layout/Footer';
 
 export default function Home() {
-  const t = useTranslations('Index');
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">{t('title')}</h1>
-      <p>{t('greeting')}</p>
+    <main className="flex min-h-screen flex-col">
+      <HeroSection />
+      <AboutSection />
+      <EducationSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </main>
   );
 }
