@@ -5,7 +5,8 @@ import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section";
 import { projects } from "@/data/projects";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { Link } from "@/i18n/routing";
+import { ExternalLink, Eye } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const containerVariants: Variants = {
@@ -61,6 +62,13 @@ export default function ProjectsSection() {
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 backdrop-blur-[2px]">
+                  <Link
+                    href={`/projects/${project.id}` as any}
+                    className="p-3 bg-white text-black rounded-full shadow-lg hover:scale-115 active:scale-95 transition-transform"
+                    title="View Details"
+                  >
+                    <Eye size={20} />
+                  </Link>
                   {project.Github && (
                     <motion.a
                       href={project.Github}
@@ -69,6 +77,7 @@ export default function ProjectsSection() {
                       className="p-3 bg-white text-black rounded-full shadow-lg"
                       whileHover={{ scale: 1.15 }}
                       whileTap={{ scale: 0.95 }}
+                      title="GitHub"
                     >
                       <FaGithub size={20} />
                     </motion.a>
@@ -81,6 +90,7 @@ export default function ProjectsSection() {
                       className="p-3 bg-white text-black rounded-full shadow-lg"
                       whileHover={{ scale: 1.15 }}
                       whileTap={{ scale: 0.95 }}
+                      title="Live Demo"
                     >
                       <ExternalLink size={20} />
                     </motion.a>
@@ -91,7 +101,9 @@ export default function ProjectsSection() {
               {/* Content */}
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-lg font-bold line-clamp-1">{project.Title}</h3>
+                  <Link href={`/projects/${project.id}` as any} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    <h3 className="text-lg font-bold line-clamp-1">{project.Title}</h3>
+                  </Link>
                   <span className="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-full shrink-0 ml-2">
                     {project.Category}
                   </span>

@@ -1,5 +1,6 @@
 export const certificates = [
   {
+    id: "1",
     title: 'AWS Academy Machine Learning Foundations',
     issuer: 'AWS Academy',
     description: 'Completed foundational training in machine learning concepts, data analysis, and model evaluation.',
@@ -7,6 +8,7 @@ export const certificates = [
     date: 'December 06, 2024'
   },
   {
+    id: "2",
     title: 'Customer Experience Design',
     issuer: 'Alison (Online Learning Platform)',
     description: 'Learned key principles of customer experience design, service improvement, and user-centered thinking.',
@@ -14,6 +16,7 @@ export const certificates = [
     date: '2025'
   },
   {
+    id: "3",
     title: 'Certificate of Completion',
     issuer: 'National Incubation Center of Cambodia (NICC)',
     description: 'Successfully completed a professional program focused on innovation, entrepreneurship, and technology skills.',

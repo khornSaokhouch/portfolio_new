@@ -5,10 +5,10 @@ import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from "react-icons/fa";
 import { ArrowUp } from "lucide-react";
 
 const socials = [
-  { icon: <FaGithub size={18} />, href: "https://github.com/khornSaokhouch", label: "GitHub", color: "hover:text-[#181717] dark:hover:text-white" },
-  { icon: <FaLinkedin size={18} />, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-[#0A66C2]" },
-  { icon: <FaEnvelope size={18} />, href: "mailto:khornsaokhouch@gmail.com", label: "Email", color: "hover:text-[#EA4335]" },
-  { icon: <FaTelegram size={18} />, href: "https://t.me/khornsaokhouch", label: "Telegram", color: "hover:text-[#26A5E4]" },
+  { icon: <FaGithub size={18} />, href: "https://github.com/khornSaokhouch", label: "GitHub", color: "text-[#181717] dark:text-white" },
+  { icon: <FaLinkedin size={18} />, href: "https://linkedin.com", label: "LinkedIn", color: "text-[#0A66C2]" },
+  { icon: <FaEnvelope size={18} />, href: "mailto:khornsaokhouch@gmail.com", label: "Email", color: "text-[#EA4335]" },
+  { icon: <FaTelegram size={18} />, href: "https://t.me/khornsaokhouch", label: "Telegram", color: "text-[#26A5E4]" },
 ];
 
 export default function Footer() {
@@ -39,7 +39,7 @@ export default function Footer() {
               aria-label={s.label}
               whileHover={{ scale: 1.15, y: -3 }}
               whileTap={{ scale: 0.95 }}
-              className={`text-zinc-500 dark:text-zinc-500 transition-colors ${s.color}`}
+              className={`transition-all hover:opacity-80 ${s.color}`}
             >
               {s.icon}
             </motion.a>

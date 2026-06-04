@@ -26,7 +26,7 @@ export default function Navbar() {
       { rootMargin: "-40% 0px -40% 0px" }
     );
 
-    const ids = ["home", "about", "education", "tech-stack", "projects", "contact"];
+    const ids = ["home", "about", "education", "certifications", "tech-stack", "projects", "contact"];
     ids.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -39,6 +39,7 @@ export default function Navbar() {
     { name: t("home"), href: "/" },
     { name: t("about"), href: "#about" },
     { name: t("education"), href: "#education" },
+    { name: t.has("certifications") ? t("certifications") : "Certifications", href: "#certifications" },
     { name: t("techStack"), href: "#tech-stack" },
     { name: t("projects"), href: "#projects" },
     { name: t("contact"), href: "#contact" },

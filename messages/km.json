@@ -9,10 +9,20 @@
     "downloadCV": "ទាញយកប្រវត្តិរូប",
     "about": "អំពីខ្ញុំ",
     "education": "ការអប់រំ",
+    "certifications": "វិញ្ញាបនប័ត្រ",
     "techStack": "បច្ចេកវិទ្យា",
     "tools": "ឧបករណ៍",
     "projects": "គម្រោង",
     "contact": "ទំនាក់ទំនង",
-    "home": "ទំព័រដើម"
+    "home": "ទំព័រដើម",
+    "backToHome": "ត្រឡប់ទៅទំព័រដើម",
+    "projectDetails": "ព័ត៌មានលម្អិតនៃគម្រោង",
+    "certificateDetails": "ព័ត៌មានលម្អិតនៃវិញ្ញាបនប័ត្រ",
+    "github": "GitHub",
+    "liveDemo": "មើលផ្ទាល់",
+    "features": "លក្ខណៈពិសេស",
+    "scope": "វិសាលភាពគម្រោង",
+    "technicalDetails": "ព័ត៌មានលម្អិតបច្ចេកទេស",
+    "hosting": "ការបង្ហោះនិងការដាក់ពង្រាយ"
   }
 }

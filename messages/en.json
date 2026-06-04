@@ -9,10 +9,20 @@
     "downloadCV": "Download CV",
     "about": "About Me",
     "education": "Education",
+    "certifications": "Certifications",
     "techStack": "Tech Stack",
     "tools": "Tools",
     "projects": "Projects",
     "contact": "Contact",
-    "home": "Home"
+    "home": "Home",
+    "backToHome": "Back to Home",
+    "projectDetails": "Project Details",
+    "certificateDetails": "Certificate Details",
+    "github": "GitHub",
+    "liveDemo": "Live Demo",
+    "features": "Key Features",
+    "scope": "Project Scope",
+    "technicalDetails": "Technical Details",
+    "hosting": "Hosting & Deployment"
   }
 }
