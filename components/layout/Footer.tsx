@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from "react-icons/fa";
-import { ArrowUp } from "lucide-react";
 
 const socials = [
   { icon: <FaGithub size={18} />, href: "https://github.com/khornSaokhouch", label: "GitHub", color: "text-[#181717] dark:text-white" },
@@ -13,10 +12,6 @@ const socials = [
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <footer className="border-t border-zinc-200 dark:border-white/10 bg-white dark:bg-transparent py-8 transition-colors relative">
@@ -46,19 +41,6 @@ export default function Footer() {
           ))}
         </div>
       </div>
-
-      {/* Back to top button */}
-      <motion.button
-        onClick={scrollToTop}
-        aria-label="Back to top"
-        whileHover={{ scale: 1.1, y: -2 }}
-        whileTap={{ scale: 0.95 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="fixed bottom-6 right-4 sm:right-6 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-shadow z-40 flex items-center justify-center"
-      >
-        <ArrowUp size={20} />
-      </motion.button>
     </footer>
   );
 }

@@ -23,6 +23,9 @@
     "features": "Key Features",
     "scope": "Project Scope",
     "technicalDetails": "Technical Details",
-    "hosting": "Hosting & Deployment"
+    "hosting": "Hosting & Deployment",
+    "webDeveloper": "Web Developer",
+    "androidDeveloper": "Android Developer",
+    "noProjects": "No projects in this category yet."
   }
 }

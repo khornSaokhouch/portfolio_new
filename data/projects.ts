@@ -1,6 +1,8 @@
 export const projects = [
+  // ─── Web Projects ───────────────────────────────────────────────────────────
   {
     id: "11",
+    DeveloperType: "web",
     Img: "/assets/projects/project11.png",
     Title: "Food Delivery Website",
     Description: "A modern and interactive frontend interface for a food delivery platform. Built with Angular and styled using Tailwind CSS, this project focuses on delivering a seamless user experience for browsing menus, managing cart items, and checking out. It features a responsive design that works flawlessly across mobile and desktop devices.",
@@ -21,6 +23,7 @@ export const projects = [
   },
   {
     id: "10",
+    DeveloperType: "web",
     Img: "/assets/projects/project10.png",
     Title: "Shopping Store Website",
     Description: "A full-stack e-commerce solution designed for a shopping store. The frontend is built with Vue.js and Tailwind CSS for a highly responsive and reactive user interface. The backend API is powered by Laravel, managing user authentication, product catalog, and order processing, with MySQL serving as the robust relational database.",
@@ -41,6 +44,7 @@ export const projects = [
   },
   {
     id: "8",
+    DeveloperType: "web",
     Img: "/assets/projects/project8.png",
     Title: "E-commerce Website",
     Description: "A comprehensive e-commerce platform offering a robust shopping experience. The frontend utilizes Next.js for server-side rendering and SEO optimization, combined with Tailwind CSS for premium styling. The backend is driven by Laravel, handling complex business logic, inventory management, and secure transactions, all stored in a MySQL database.",
@@ -61,6 +65,7 @@ export const projects = [
   },
   {
     id: "9",
+    DeveloperType: "web",
     Img: "/assets/projects/project9.png",
     Title: "Order Coffee System Web Application",
     Description: "A specialized web application for managing coffee orders in a cafe environment. It features a sleek Next.js frontend where customers can customize their coffee orders, and a Laravel backend for cafe staff to manage incoming orders in real-time. The system is designed to streamline the ordering process, track sales, and reduce wait times.",
@@ -80,7 +85,8 @@ export const projects = [
     Hosting: "Vercel"
   },
   {
-    id: "12",	
+    id: "12",
+    DeveloperType: "web",
     Img: "/assets/projects/project12.png",
     Title: "CINEHUB Movie Website",
     Description: "A dynamic movie discovery platform built with Next.js. It integrates directly with the TMDB API to fetch real-time data about popular movies, TV shows, and cast information. Users can search for titles, view detailed information, and explore trending content in a visually appealing dark-themed interface styled with Tailwind CSS.",
@@ -101,6 +107,7 @@ export const projects = [
   },
   {
     id: "1",
+    DeveloperType: "web",
     Img: "/assets/projects/project7.png",
     Title: "Service Me Website",
     Description: "Service Me is a comprehensive platform connecting service providers with customers. Built as a team project, it features a Next.js frontend and a Laravel backend. The application supports user registration, service listing, booking management, and reviews. It demonstrates strong full-stack capabilities and collaborative team development.",
@@ -121,6 +128,7 @@ export const projects = [
   },
   {
     id: "2",
+    DeveloperType: "web",
     Img: "/assets/projects/project2.png",
     Title: "Booking Tour Website",
     Description: "A robust tour booking system developed using Next.js and Node.js. It allows users to browse available tours, check itineraries, and make bookings. The frontend is optimized for performance using React and Tailwind CSS, while the Node.js backend efficiently handles the API requests, user authentication, and database interactions.",
@@ -141,6 +149,7 @@ export const projects = [
   },
   {
     id: "3",
+    DeveloperType: "web",
     Img: "/assets/projects/project3.png",
     Title: "CookBook Website",
     Description: "A recipe sharing and discovery platform built with Next.js and Supabase. Users can browse various recipes, add their own culinary creations, and manage their favorite dishes. Supabase provides a scalable backend-as-a-service solution, handling secure authentication and database storage, while Tailwind CSS ensures a beautiful and responsive UI.",
@@ -161,6 +170,7 @@ export const projects = [
   },
   {
     id: "7",
+    DeveloperType: "web",
     Img: "/assets/projects/project1.png",
     Title: "Flower-Shop-website",
     Description: "A beautifully crafted static website for a local flower shop. Developed purely with HTML and CSS, this project focuses on semantic markup, responsive design principles, and custom CSS animations. It serves as a lightweight, fast-loading digital storefront to showcase floral arrangements and shop details.",
@@ -178,5 +188,67 @@ export const projects = [
     Scope: "Frontend web design focusing on core web technologies.",
     TechnicalDetails: "Built without JavaScript to demonstrate strong foundational knowledge of HTML and advanced CSS techniques. Optimized for extremely fast load times.",
     Hosting: "Vercel"
+  },
+
+  // ─── Android Projects ────────────────────────────────────────────────────────
+  {
+    id: "android-1",
+    DeveloperType: "android",
+    Img: "/assets/projects/android/project1.png",
+    Title: "Saby-Tinh App",
+    Description: "A native mobile application built for seamless user experiences. Currently in active development.",
+    Category: "Native",
+    ProjectLink: "",
+    TechStack: ["Kotlin", "Android Studio"],
+    Github: "",
+    Team: ["Khorn saokhouch"],
+    Features: [
+      "Native Android performance",
+      "Modern Material UI",
+      "Offline capabilities"
+    ],
+    Scope: "Mobile Development",
+    TechnicalDetails: "Built natively for Android devices.",
+    Hosting: "Local"
+  },
+  {
+    id: "android-2",
+    DeveloperType: "android",
+    Img: "",
+    Title: "Coffee App",
+    Description: "An Android-based application for ordering coffee. Designed with a focus on speed and intuitive navigation.",
+    Category: "Native",
+    ProjectLink: "",
+    TechStack: ["Java/Kotlin", "Android SDK"],
+    Github: "",
+    Team: ["Khorn saokhouch"],
+    Features: [
+      "Quick ordering system",
+      "User-friendly interface",
+      "Menu browsing"
+    ],
+    Scope: "Mobile Development",
+    TechnicalDetails: "Native Android application.",
+    Hosting: "Local"
+  },
+  {
+    id: "android-3",
+    DeveloperType: "android",
+    Img: "",
+    Title: "Booking Tour",
+    Description: "A comprehensive tour booking application for Android devices, allowing users to discover and book travel experiences.",
+    Category: "Native",
+    ProjectLink: "",
+    TechStack: ["Android Studio", "API Integration"],
+    Github: "",
+    Team: ["Khorn saokhouch"],
+    Features: [
+      "Tour discovery",
+      "Booking management",
+      "Location services"
+    ],
+    Scope: "Mobile Development",
+    TechnicalDetails: "Integrated with backend APIs for real-time booking data.",
+    Hosting: "Local"
   }
 ];

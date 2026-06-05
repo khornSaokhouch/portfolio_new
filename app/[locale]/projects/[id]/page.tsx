@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Smartphone, Globe } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { getTranslations } from "next-intl/server";
 
@@ -38,14 +38,27 @@ export default async function ProjectDetailsPage({ params }: { params: Promise<{
 
         <div className="bg-white dark:bg-white/5 dark:backdrop-blur-xl border border-zinc-200 dark:border-white/10 rounded-3xl overflow-hidden shadow-xl">
           {/* Hero Image */}
-          <div className="relative w-full h-[40vh] min-h-[300px] max-h-[500px] bg-zinc-100 dark:bg-zinc-900">
-            <Image
-              src={project.Img}
-              alt={project.Title}
-              fill
-              className="object-contain sm:object-cover"
-              priority
-            />
+          <div className="relative w-full h-[40vh] min-h-[300px] max-h-[500px] bg-gradient-to-br from-violet-500/10 via-purple-500/5 to-zinc-100 dark:from-violet-900/20 dark:via-purple-900/10 dark:to-zinc-900 flex items-center justify-center overflow-hidden">
+            {project.Img ? (
+              <Image
+                src={project.Img}
+                alt={project.Title}
+                fill
+                className="object-contain sm:object-cover"
+                priority
+              />
+            ) : (
+              <>
+                <div className="absolute inset-0 bg-violet-400/20 dark:bg-violet-600/20 blur-[100px] rounded-full scale-150" />
+                <div className="relative z-10 w-32 h-32 md:w-48 md:h-48 rounded-[2rem] bg-white dark:bg-zinc-800 shadow-2xl shadow-violet-500/20 flex items-center justify-center border border-zinc-100 dark:border-white/10">
+                  {project.DeveloperType === "android" ? (
+                    <Smartphone size={80} className="text-violet-500 dark:text-violet-400" />
+                  ) : (
+                    <Globe size={80} className="text-blue-500 dark:text-blue-400" />
+                  )}
+                </div>
+              </>
+            )}
           </div>
 
           <div className="p-8 md:p-12">
