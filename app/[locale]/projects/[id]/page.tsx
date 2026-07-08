@@ -67,9 +67,14 @@ export default async function ProjectDetailsPage({ params }: { params: Promise<{
                 <span className="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-semibold mb-4">
                   {project.Category}
                 </span>
-                <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+                <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">
                   {project.Title}
                 </h1>
+                {(project as any).Role && (
+                  <p className="text-base font-medium text-blue-600 dark:text-blue-400 mb-4">
+                    {(project as any).Role}
+                  </p>
+                )}
                 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">

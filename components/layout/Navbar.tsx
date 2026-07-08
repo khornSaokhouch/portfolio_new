@@ -3,7 +3,6 @@
 import * as React from "react";
 import { Link } from "@/i18n/routing";
 import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
-import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -51,7 +50,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="font-bold text-xl tracking-tighter">
-              KS.
+              Khorn Saokhouch
             </Link>
           </div>
 
@@ -85,14 +84,12 @@ export default function Navbar() {
             
             <div className="flex items-center space-x-4 border-l border-zinc-200 dark:border-zinc-800 pl-4">
               <ThemeSwitcher />
-              <LanguageSwitcher />
             </div>
           </div>
 
           {/* Mobile top controls */}
           <div className="flex md:hidden items-center space-x-3">
             <ThemeSwitcher />
-            <LanguageSwitcher />
           </div>
           </div>
         </div>

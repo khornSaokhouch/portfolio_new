@@ -6,8 +6,8 @@ import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope } from "react-icons/fa";
 const socials = [
   { icon: <FaGithub size={18} />, href: "https://github.com/khornSaokhouch", label: "GitHub", color: "text-[#181717] dark:text-white" },
   { icon: <FaLinkedin size={18} />, href: "https://linkedin.com", label: "LinkedIn", color: "text-[#0A66C2]" },
-  { icon: <FaEnvelope size={18} />, href: "mailto:khornsaokhouch@gmail.com", label: "Email", color: "text-[#EA4335]" },
-  { icon: <FaTelegram size={18} />, href: "https://t.me/khornsaokhouch", label: "Telegram", color: "text-[#26A5E4]" },
+  { icon: <FaEnvelope size={18} />, href: "mailto:khornsaokhouch4456@gmail.com", label: "Email", color: "text-[#EA4335]" },
+  { icon: <FaTelegram size={18} />, href: "https://t.me/Khouch04", label: "Telegram", color: "text-[#26A5E4]" },
 ];
 
 export default function Footer() {

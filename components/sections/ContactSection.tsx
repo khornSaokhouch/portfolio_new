@@ -23,9 +23,9 @@ const itemVariants: Variants = {
 };
 
 const contactInfoItems = [
-  { icon: <Mail size={20} />, title: "Email", detail: "khornsaokhouch@gmail.com", href: "mailto:khornsaokhouch@gmail.com", color: "text-[#EA4335]", bg: "bg-red-50 dark:bg-red-900/20" },
-  { icon: <Phone size={20} />, title: "Phone", detail: "+855 12 345 678", href: "tel:+85512345678", color: "text-green-600 dark:text-green-400", bg: "bg-green-50 dark:bg-green-900/20" },
-  { icon: <FaTelegram size={20} />, title: "Telegram", detail: "@khornsaokhouch", href: "https://t.me/khornsaokhouch", color: "text-[#26A5E4]", bg: "bg-sky-50 dark:bg-sky-900/20" },
+  { icon: <Mail size={20} />, title: "Email", detail: "khornsaokhouch4456@gmail.com", href: "mailto:khornsaokhouch4456@gmail.com", color: "text-[#EA4335]", bg: "bg-red-50 dark:bg-red-900/20" },
+  { icon: <Phone size={20} />, title: "Phone", detail: "096 441 5022", href: "tel:+855964415022", color: "text-green-600 dark:text-green-400", bg: "bg-green-50 dark:bg-green-900/20" },
+  { icon: <FaTelegram size={20} />, title: "Telegram", detail: "@Khouch04", href: "https://t.me/Khouch04", color: "text-[#26A5E4]", bg: "bg-sky-50 dark:bg-sky-900/20" },
   { icon: <MapPin size={20} />, title: "Location", detail: "Phnom Penh, Cambodia", href: "#", color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-50 dark:bg-blue-900/20" },
 ];
 

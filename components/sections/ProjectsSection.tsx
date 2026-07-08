@@ -128,6 +128,11 @@ function WebProjectCard({ project, t }: { project: any; t: any }) {
             <h3 className="text-[14px] sm:text-[15px] font-bold line-clamp-1">
               {project.Title}
             </h3>
+            {project.Role && (
+              <p className="text-[11px] sm:text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">
+                {project.Role}
+              </p>
+            )}
           </Link>
           <span className="shrink-0 text-[10px] sm:text-[11px] font-semibold px-2 sm:px-2.5 py-1 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 rounded-full border border-blue-100 dark:border-blue-800/40">
             {project.Category}
@@ -141,7 +146,7 @@ function WebProjectCard({ project, t }: { project: any; t: any }) {
 
         {/* Tech chips */}
         <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-3 sm:mb-4">
-          {project.TechStack.slice(0, 3).map((tech: string, idx: number) => (
+          {project.TechStack.map((tech: string, idx: number) => (
             <span
               key={idx}
               className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 bg-zinc-200/80 dark:bg-white/10 text-zinc-600 dark:text-zinc-300 rounded-md"
@@ -149,11 +154,6 @@ function WebProjectCard({ project, t }: { project: any; t: any }) {
               {tech}
             </span>
           ))}
-          {project.TechStack.length > 3 && (
-            <span className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 bg-zinc-200/80 dark:bg-white/10 text-zinc-600 dark:text-zinc-300 rounded-md">
-              +{project.TechStack.length - 3}
-            </span>
-          )}
         </div>
 
         {/* CTA */}
@@ -230,15 +230,20 @@ function AndroidProjectCard({ project, t }: { project: any; t: any }) {
             <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-50 group-hover/title:text-violet-600 dark:group-hover/title:text-violet-400 transition-colors leading-snug line-clamp-1">
               {project.Title}
             </h3>
+            {project.Role && (
+              <p className="text-xs sm:text-sm font-semibold text-violet-600 dark:text-violet-400 mt-1">
+                {project.Role}
+              </p>
+            )}
           </Link>
-          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-1 line-clamp-2 leading-relaxed">
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 mt-2 line-clamp-3 leading-relaxed">
             {project.Description}
           </p>
         </div>
 
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-1.5">
-          {project.TechStack.slice(0, 3).map((tech: string, idx: number) => (
+          {project.TechStack.map((tech: string, idx: number) => (
             <span
               key={idx}
               className="text-[10px] sm:text-xs font-medium px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300"
@@ -246,11 +251,6 @@ function AndroidProjectCard({ project, t }: { project: any; t: any }) {
               {tech}
             </span>
           ))}
-          {project.TechStack.length > 3 && (
-            <span className="text-[10px] sm:text-xs font-medium px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
-              +{project.TechStack.length - 3}
-            </span>
-          )}
         </div>
 
         {/* Footer row */}

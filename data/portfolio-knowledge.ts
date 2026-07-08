@@ -12,9 +12,9 @@ const portfolioKnowledge = {
   owner: {
     name: "Khorn Saokhouch",
     role: "Frontend / Full Stack Developer",
-    email: "khornsaokhouch@gmail.com",
+    email: "khornsaokhouch4456@gmail.com",
     github: "https://github.com/khornSaokhouch",
-    telegram: "https://t.me/khornsaokhouch",
+    telegram: "https://t.me/Khouch04",
     location: "Phnom Penh, Cambodia",
   },
   education,

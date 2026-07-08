@@ -2,7 +2,7 @@
   "Index": {
     "title": "Khorn Saokhouch | Portfolio",
     "greeting": "Hello, I'm Khorn Saokhouch",
-    "role": "Frontend / Full Stack Developer",
+    "role": "Frontend / Backend & Mobile Developer",
     "tagline": "Building modern, responsive, and beautiful web applications.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me",
@@ -25,7 +25,7 @@
     "technicalDetails": "Technical Details",
     "hosting": "Hosting & Deployment",
     "webDeveloper": "Web Developer",
-    "androidDeveloper": "Android Developer",
+    "androidDeveloper": "Mobile Developer",
     "noProjects": "No projects in this category yet."
   }
 }

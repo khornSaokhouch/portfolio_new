@@ -90,8 +90,8 @@ export default function HeroSection() {
             >
               <SocialLink href="https://github.com/khornSaokhouch" icon={<FaGithub size={24} />} colorClass="text-[#181717] dark:text-white" />
               <SocialLink href="https://linkedin.com" icon={<FaLinkedin size={24} />} colorClass="text-[#0A66C2]" />
-              <SocialLink href="mailto:khornsaokhouch@gmail.com" icon={<FaEnvelope size={24} />} colorClass="text-[#EA4335]" />
-              <SocialLink href="https://t.me/khornsaokhouch" icon={<FaTelegram size={24} />} colorClass="text-[#26A5E4]" />
+              <SocialLink href="mailto:khornsaokhouch4456@gmail.com" icon={<FaEnvelope size={24} />} colorClass="text-[#EA4335]" />
+              <SocialLink href="https://t.me/Khouch04" icon={<FaTelegram size={24} />} colorClass="text-[#26A5E4]" />
             </motion.div>
           </motion.div>
 
